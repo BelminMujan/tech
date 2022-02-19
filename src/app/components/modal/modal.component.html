@@ -1,0 +1,19 @@
+<div [ngClass]="'modal-wrapper'">
+  <div (click)="close()" [ngClass]="'backdrop'"></div>
+  <div [ngClass]="'modal-content'">
+    <app-input [(ngModel)]="grocery.name" [label]="'Name'"></app-input>
+    <app-input
+      [(ngModel)]="grocery.quantity"
+      [type]="'number'"
+      [label]="'Quantity'"
+    ></app-input>
+    <app-input
+      [(ngModel)]="grocery.whereToBuy"
+      [label]="'Where To Buy'"
+    ></app-input>
+    <app-input [(ngModel)]="grocery.addedBy" [label]="'Added by'"></app-input>
+    <div style="display: flex; justify-content: center">
+      <app-button [callback]="addItem" [title]="'Add'"></app-button>
+    </div>
+  </div>
+</div>

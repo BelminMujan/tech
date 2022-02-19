@@ -1,0 +1,24 @@
+<div [ngClass]="'details-wrapper'">
+  <div [ngClass]="'content'">
+    <div [ngClass]="'fields'">
+      <app-input [label]="'Name'" [(ngModel)]="grocery.name"></app-input>
+      <app-input
+        [label]="'Quantity'"
+        [(ngModel)]="grocery.quantity"
+      ></app-input>
+      <app-input
+        [label]="'Where To Buy'"
+        [(ngModel)]="grocery.whereToBuy"
+      ></app-input>
+      <app-input
+        [label]="'Added By '"
+        [(ngModel)]="grocery.addedBy"
+      ></app-input>
+    </div>
+    <div [ngClass]="'controls'">
+      <app-button [callback]="delete" [title]="'Delete'"></app-button>
+      <app-button [title]="'Update'" [callback]="update"></app-button>
+    </div>
+    <app-button [title]="'Back'" [callback]="goBack"></app-button>
+  </div>
+</div>

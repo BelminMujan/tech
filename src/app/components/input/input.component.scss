@@ -1,0 +1,15 @@
+.input-field-wrapper {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  input {
+    margin-left: 10px;
+    padding: 4px 6px;
+    border: 1px solid black;
+    border-radius: 3px;
+    &:focus {
+      border: 1px solid var(--light-blue);
+      outline: none;
+    }
+  }
+}

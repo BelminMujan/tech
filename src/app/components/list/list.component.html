@@ -1,0 +1,8 @@
+<div>
+  <app-item
+    *ngFor="let grocery of groceryList"
+    [title]="grocery.name"
+    [quantity]="grocery.quantity"
+    [id]="grocery.id"
+  ></app-item>
+</div>

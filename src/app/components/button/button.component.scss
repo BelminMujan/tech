@@ -1,0 +1,15 @@
+.button-wrapper {
+  background-color: var(--green);
+  padding: 8px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 2px 4px;
+  &:hover {
+    box-shadow: 0 0 2px lightgreen;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}

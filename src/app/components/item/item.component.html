@@ -1,0 +1,9 @@
+<a [routerLink]="['/', id]" [ngClass]="'item-wrapper'">
+  <p>{{ title }}</p>
+  <p [ngClass]="'quantity'">{{ quantity }}</p>
+  <img
+    [ngClass]="'arrow'"
+    alt=">"
+    src="../../../assets/icons/right-arrow.png"
+  />
+</a>

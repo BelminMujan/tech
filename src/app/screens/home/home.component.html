@@ -1,0 +1,5 @@
+<div [ngClass]="'home-wrapper'">
+  <app-button [callback]="showModal" [title]="'Add Grocery'"></app-button>
+  <app-list></app-list>
+  <app-modal [close]="closeModal" *ngIf="modalShown"></app-modal>
+</div>

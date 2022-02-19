@@ -1,0 +1,4 @@
+<div [ngClass]="'input-field-wrapper'">
+  <label>{{ label }}</label>
+  <input [(ngModel)]="value" (ngModelChange)="updateChanges()" [type]="type" />
+</div>
