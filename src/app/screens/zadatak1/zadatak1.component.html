@@ -1,0 +1,6 @@
+<p>Enter path</p>
+<input [(ngModel)]="path" type="text" />
+<button (click)="lookup(laptop, path)">Lookup</button>
+
+<div>Result from path is:</div>
+<div *ngFor="let e of result">{{ e }}</div>

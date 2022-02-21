@@ -11,6 +11,8 @@ import { ModalComponent } from './components/modal/modal.component';
 import { InputComponent } from './components/input/input.component';
 import { FormsModule } from '@angular/forms';
 import { DetailsComponent } from './screens/details/details.component';
+import { Zadatak3Component } from './screens/zadatak3/zadatak3.component';
+import { Zadatak1Component } from './screens/zadatak1/zadatak1.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { DetailsComponent } from './screens/details/details.component';
     ModalComponent,
     InputComponent,
     DetailsComponent,
+    Zadatak3Component,
+    Zadatak1Component,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
